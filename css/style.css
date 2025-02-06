@@ -11321,6 +11321,10 @@ table.dataTable thead .sorting::after {
     font-size: 18px;
     font-weight: 500;
     line-height: 18px; }
+  .card-title2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 18px; }
   .card-header {
     border-bottom: 0px;
     background: transparent; }
