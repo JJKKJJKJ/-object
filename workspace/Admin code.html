@@ -520,151 +520,683 @@
                                 <h1 class="card-title2">code</h1>
 
                                 <div class="table-responsive">
-                                    <div class="col">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="card-title">기본 정보</h4>
-                                                <div class="basic-form">
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-3">
-                                                                <div>
-                                                                <label>코드 그룹</label>
-                                                                <select id="inputState" class="form-control">
-                                                                    <option selected="selected">선택하세요</option>
-                                                                    <option>미사용</option>
-                                                                </select>
-                                                                <br>   
-                                                                
-                                                                </div>
-                                                                <label>코드</label>
-                                                                <div class="basic-form">
-                                                                    <form>
-                                                                        <div class="form-group">
-                                                                            <input class="form-control" type="text" placeholder="자동" readonly="readonly">
-                                                                        </div>
-                                                                    </form>
-                                                                    <br>
-                                                                </div> 
-                                                                
-                                                                <div>
-                                                                    <label>사용 여부</label>
-                                                                    <select id="inputState" class="form-control">
-                                                                        <option selected="selected">사용</option>
-                                                                        <option>미사용</option>
-                                                                    </select>
-                                                                    <!-- <h4 class="card-title">Textarea</h4> -->
-                                                                    <div class="basic-form">
-                                                                        <form>
-                                                                            <div class="form-group">
-                                                                                <label>설명</label>
-                                                                                <textarea class="form-control h-150px" rows="6" id="comment"></textarea>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                </div><!--요기-->                                          
-                                                                <div><button type="button" class="btn btn" onClick="location.href='Admin codegroup.html';" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
-                                                                    <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
-                                                                    <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
-                                                                    <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
-                                                                  </svg></button></div>
-                                                            </div>
+                                    <table class="table table-striped table-bordered zero-configuration">
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </th>
+                                                <th>#</th>
+                                                <th>사용</th>
+                                                <th>코드그룹 코드</th>
+                                                <th>코드그룹 이름</th>
+                                                <th>대체 코드</th>
+                                                <th>코드 이름</th>
+                                                <th>코드 이름(영문)</th>
+                                                <th>순서</th>
+                                                <th>등록일</th>
+                                                <th>코드</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>162</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>161</td>
+                                                <td>Y</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>160</td>
+                                            <td>Y</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>159</td>
+                                                <td>Y</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>158</td>
+                                                <td>Y</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>157</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>156</td>
+                                                <td>Y</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>155</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>154</td>
+                                                <td>Y</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>153</td>
+                                            <td>Y</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>152</td>
+                                                <td>Y</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>151</td>
+                                                <td>Y</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>150</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>149</td>
+                                                <td>Y</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
 
-                                                            
-                                                            <div class="form-group col-md-3">
-                                                                    <div class="">
-                                                                        <!-- <div class=""> -->
-                                                                            <div></div>
-                                                                            <div></div>
-                                                                            <div></div>
-                                                                            <label>코드(ANOTHER)</label>
-                                                                            <!-- <h4 class="card-title">코드(ANOTHER)</h4> -->
-                                                                            <div class="basic-form">
-                                                                                <form>
-                                                                                    <div class="form-group">
-                                                                                        <input class="form-control" type="text" placeholder="영대 소문자,숫자" >
-                                                                                    </div>
-                                                                                </form>
-                                                                         </div> 
-                                                                            <label>순서</label>
-                                                                            <!-- <h4 class="card-title">코드(ANOTHER)</h4> -->
-                                                                            <div class="basic-form">
-                                                                                <form>
-                                                                                    <div class="form-group">
-                                                                                        <input class="form-control" type="text" placeholder="" >
-                                                                                    </div>
-                                                                                </form>
-                                                                         </div> 
-                                                                     <!-- </div>                   -->
-                                                                 </div>                                                               
-                                                         </div>
-                                                            <div class="form-group col-md-3">
-                                                                    <div class="">
-                                                                       
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div><br>
-                                                                            <label>코드 이름</label>
-                                                                            <!-- <h4 class="card-title">코드(ANOTHER)</h4> -->
-                                                                            <div class="basic-form">
-                                                                                <form>
-                                                                                    <div class="form-group">
-                                                                                        <input class="form-control" type="text" placeholder="한글,영대 소문자,숫자" >
-                                                                                    </div>
-                                                                                </form>
-                                                                         </div> 
-                                                                 </div>                                                               
-                                                         </div>
-                                                          <div class="form-group col-md-3">
-                                                                    <div class="">
-                                                                        <!-- <div class=""> -->
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div>
-                                                                            <div><label></label></div><br>
-                                                                            <label>코드 이름 (영문)</label>
-                                                                            <!-- <h4 class="card-title">코드(ANOTHER)</h4> -->
-                                                                            <div class="basic-form">
-                                                                                <form>
-                                                                                    <div class="form-group">
-                                                                                        <input class="form-control" type="text" placeholder="한글,영대 소문자,숫자" >
-                                                                                    </div>
-                                                                                </form>
-                                                                         </div> 
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <br>
-                                                                         <div><button type="button"class="btn btn" style="float: right;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-database-fill" viewBox="0 0 16 16">
-                                                                            <path d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223"/>
-                                                                            <path d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                                                                            <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                                                                            <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                                                                          </svg></button></div>
-                                                                     <!-- </div>                   -->
-                                                                 </div>                                                               
-                                                         </div>
-                                                       </div>  
-                                                   </form>
-                                               </div>     
-                                             </div>           
-                                         </div>              
-                                      </div>                                                                              
-                                  </div>                     
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>148</td>
+                                            <td>Y</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>147</td>
+                                                <td>Y</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>146</td>
+                                                <td>Y</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>145</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>144</td>
+                                                <td>Y</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>143</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>142</td>
+                                                <td>Y</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>141</td>
+                                            <td>Y</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>140</td>
+                                                <td>Y</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>139</td>
+                                                <td>Y</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>138</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>137</td>
+                                                <td>Y</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>136</td>
+                                                <td>Y</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>135</td>
+                                                <td>Y</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>134</td>
+                                            <td>Y</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>133</td>
+                                                <td>Y</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>132</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>131</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>130</td>
+                                                <td>San Francisco</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>129</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>128</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>127</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>126</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>125</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>124</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>123</td>
+                                                <td>San Francisco</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>122</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" id="chk5">
+                                                    <label class="toggle" for="chk5"></label>
+                                                </td>
+                                                <td>121</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <td><input type="checkbox" id="chk5">
+                                                <label class="toggle" for="chk5"></label>
+                                            </td>
+                                            <td>120</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            <td>$86,000</td>
+                                            </tr>
+                                            </tfoot>
+                                    </table>
                                 </div>
+                                <div>
+                                    <button type="button" class="btn btn" style="float: right;"
+                                        onClick="location.href='Admin code2.html';"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+                                            class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0" />
+                                        </svg>
+                                        </svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- #/ container -->
         </div>
         <!--**********************************
